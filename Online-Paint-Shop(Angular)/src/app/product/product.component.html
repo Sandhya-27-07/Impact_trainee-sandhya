@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+       
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    </head>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+
+.ppp{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.ppp{
+    font-family: 'Quicksand', sans-serif;
+    border: 25px solid lightgrey;
+    
+}
+
+img{
+    width: 120%;
+    height:90%;
+    
+    
+}
+.container{
+    width: 94vw;
+    margin: 0 auto;
+}
+.lg-title,
+.sm-title{
+    
+    padding: 0.6rem 0;
+    
+}
+.lg-title{
+    font-size: 3.5rem;
+    font-weight:bold;
+    text-align: center;
+    padding: 1.3rem 0;
+    opacity: 0.9;
+    font-family: 'Cinzel', serif;
+    font-style:italic;
+    margin-top: 30px;
+    
+    
+}
+.sm-title{
+    font-weight: 900;
+    font-size:25px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.products{
+    background:#f8f9fa;
+    padding: 3.2rem 0;
+}
+.product{
+    margin: 2rem;
+    position: relative;
+}
+.product-content{
+    background: #ededed;
+    padding: 3rem 0.5rem 2rem 0.5rem;
+    cursor: pointer;
+}
+.product-img{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+    width: 210px;
+    height: 200px;
+    padding-left: 20px;
+    border-radius: 50%;
+    
+}
+
+
+.btn-cart, .btn-buy{
+    background: transparent;
+    border: 1px solid black;
+    padding: 0.5rem 0;
+    width: 105px;
+    font-family: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: all 0.6s ease;
+    font-size: 13px;
+    
+}
+.btn-cart{
+    background:lightseagreen;
+    color: white;
+}
+.btn-cart:hover{
+    background:lightseagreen
+}
+.btn-buy{
+    background: white;
+}
+.btn-buy:hover{
+    background: lightseagreen;
+    color: #fff;
+}
+.product-info{
+    background: white;
+    padding: 2rem;
+}
+.product-info-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rating span{
+    color: #40c9a2;
+}
+.product-name{
+    color: black;
+    display: block;
+    text-decoration: none;
+    font-size:17px;
+    
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.product-price{
+    padding-top: 0.6rem;
+    padding-right: 0.6rem;
+    display: inline-block;
+}
+
+.product-img img{
+    transition: transform 0.6s ease;
+}
+.product:hover .product-img img{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 992px){
+    .product-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-col-r-bottom{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1200px){
+    .product-items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .product{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    
+}
+
+@media screen and (min-width: 1336px){
+    .product-items{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .product-collection-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .flex{
+        height: 60vh;
+    }
+    .product-col-left{
+        height: 121.5vh;
+    }
+}  
+
+   
+
+    </style>
+    
+    
+    <body>
+        <section class="ppp">
+
+        <div class = "products">
+            <div class = "container">
+                <h1 class = "lg-title">Asian Paints</h1>
+                 
+
+                <div class = "product-items">
+                    
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img [src] = "img1" alt = "product image">
+                            </div>
+                            
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Gradient Blue</h2>
+                                
+                            </div>
+                            <a href = "#" class = "product-name">5L-Rs.3500</a>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div><br>
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img [src] = "img2" alt = "product image">
+                            </div>
+                            
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Violet</h2>
+                                
+                            </div>
+                            <a href = "#" class = "product-name">5L-Rs.3000</a>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div><br>
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img [src] = "img3" alt = "product image">
+                            </div>
+                            
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Bright Orange</h2>
+                                
+                            </div>
+                            <a href = "#" class = "product-name">5L-Rs.3500</a>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div><br>
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img [src] = "img4" alt = "product image">
+                            </div>
+                            
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Plain Green</h2>
+                                
+                            </div>
+                            <a href = "#" class = "product-name">5L-Rs.2500</a>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div><br>
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img [src] = "img5" alt = "product image">
+                            </div>
+                            
+                        </div>
+            
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Abstract Pink</h2>
+                                
+                            </div>
+                            <a href = "#" class = "product-name">5L-Rs.2500</a>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div><br>
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                   
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img img [src] = "img6" alt = "product image">
+                            </div>
+                            
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Dark Blue</h2>
+                                
+                            </div>
+                            <a href = "#" class = "product-name">5L-Rs.4500</a>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div><br>
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img [src] = "img7" alt = "product image">
+                            </div>
+                            
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Soft Red</h2>
+                                
+                            </div>
+                            <a href = "#" class = "product-name">5L-Rs.4000</a>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div><br>
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img [src] = "img8" alt = "product image">
+                            </div>
+                            
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Paper White</h2>
+                                
+                            </div>
+                            <a href = "#" class = "product-name">5L-Rs.2500</a>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div><br>
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                    
+
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img [src] = "img9" alt = "product image">
+                            </div>
+                            
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Dark Blue</h2>
+                                
+                            </div>
+                            <a href = "#" class = "product-name">5L-Rs.4500</a>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div><br>
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img [src] = "img10" alt = "product image">
+                            </div>
+                            
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Yellow</h2>
+                                
+                            </div>
+                            <a href = "#" class = "product-name">5L-Rs.3600</a>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div><br>
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img [src] = "img11" alt = "product image">
+                            </div>
+                            
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Nello Brown</h2>
+                                
+                            </div>
+                            <a href = "#" class = "product-name">5L-Rs.2300</a>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div><br>
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img [src] = "img12" alt = "product image">
+                            </div>
+                            
+                        </div>
+
+                    <div class = "product-info">
+                        <div class = "product-info-top">
+                                <h2 class = "sm-title">Dark Green</h2>
+                                
+                            </div>
+                            <a href = "#" class = "product-name">5L-Rs.2900</a>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div><br>
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        
+
+
+
+
+        

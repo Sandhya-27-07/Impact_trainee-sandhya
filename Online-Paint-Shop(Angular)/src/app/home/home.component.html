@@ -1,0 +1,146 @@
+
+
+<section class="home">
+
+        <div class="slides-container">
+    
+            <div class="slide active">
+            
+                
+                <div class="image">
+                  
+                  
+                
+                    <img [src]= "myimages" alt="">
+                    <h2 class="heading">paint your home!!<br>choose your colors</h2>
+                    
+                    
+                </div>
+            </div>
+    
+            <div class="slide">
+                
+                <div class="image">
+                    <img src="C:\Users\GV\Downloads\777777-PhotoRoom.v1 (1).jpg" alt="">
+                    <h2 class="heading"> paint your home!!<br>choose your colors</h2>
+                    <button class="btn">shop now</button>
+                </div>
+            </div>
+    
+            <div class="slide">
+               
+                <div class="image">
+                    <img src="C:\Users\GV\Downloads\333_cleanup (1).v1.jpg" alt="">
+                    <h2 class="heading">paint your home!!<br>choose your colors</h2>
+                    <button> class="btn">shop now</button>
+                    
+                </div>
+            </div>
+    
+        </div>
+    
+        
+    </section>
+    <h1 class="Service">Services</h1>
+    <section class="info-container">
+      
+
+      <div class="info">
+          <img [src]= "myimages1" alt="">
+          <div class="content">
+              <h3>Fast delivery</h3>
+              <span>within 30 minutes</span>
+          </div>
+      </div>
+
+      <div class="info">
+        <img [src]= "myimages2"  alt="">
+        <div class="content">
+            <h3>Happy Customers</h3>
+            <span>Four Star Ratings</span>
+        </div>
+    </div>
+    
+      <div class="info">
+          <img [src]= "myimages3"  alt="">
+          <div class="content">
+              <h3>24 / 7 available</h3>
+              <span>call us anytime</span>
+          </div>
+      </div>
+    
+      <div class="info">
+          <img [src]= "myimages4"  alt="">
+          <div class="content">
+              <h3>easy payments</h3>
+              <span>cash or credits</span>
+          </div>
+      </div>
+    
+    </section>
+
+    <section class="footer">
+
+      <div class="box-container">
+  
+          <div class="box">
+              <h3>quick links</h3>
+              <a href="home.html"> <i class="fas fa-arrow-right"></i> home</a>
+              
+              <a href="about.html"> <i class="fas fa-arrow-right"></i> about</a>
+              
+              <a href="#"> <i class="fas fa-arrow-right"></i> visit</a>
+              <a href="contact.html"> <i class="fas fa-arrow-right"></i> contact</a>
+          </div>
+  
+          <div class="box">
+              <h3>extra links</h3>
+              <a href="#"> <i class="fas fa-arrow-right"></i> my order </a>
+              <a href="#"> <i class="fas fa-arrow-right"></i> my favorite </a>
+              <a href="#"> <i class="fas fa-arrow-right"></i> my wishlist </a>
+              <a href="#"> <i class="fas fa-arrow-right"></i> my account </a>
+              <a href="#"> <i class="fas fa-arrow-right"></i> terms or use </a>
+          </div>
+
+          <div class="box">
+            <h3>Services available</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Fast delivery</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Happy customers</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Easy payments</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> 24/7 Available</a>
+            
+        </div>
+  
+          <div class="box">
+              <h3>Follow us</h3>
+              <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+              <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+              <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+              <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+              
+          </div>
+  
+          
+      </div>
+  
+  </section>
+  
+    <script>
+      let slides = document.querySelectorAll('.home .slides-container .slide');
+let index = 0;
+
+function next(){
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+}
+
+function prev(){
+    slides[index].classList.remove('active');
+    index = (index - 1 + slides.length) % slides.length;
+    slides[index].classList.add('active');
+}
+    </script>
+    
+    
+
